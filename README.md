@@ -1,4 +1,9 @@
-# Mixed-Scale Dense Convolutional Network
+# A Mixed-Scale Dense Convolutional Neural Network for image analysis
+
+This repository is a simplified implementation of the paper: [A mixed-scale dense convolutional neural network for image analysis](http://www.pnas.org/content/early/2017/12/21/1715832114), for image segmentation. The implementation uses the [PyTorch](https://pytorch.org) framework.
+
+> Note: Work in progress. Any contribution is appreciated.
+
 
 The files are organized as follows:
 
@@ -54,3 +59,9 @@ The structure used when creating the dataset is as follows:
 └── gt (ground truth data)
 ```
 This structure is to be used for all dataset creation and adaptation pruposes. Change congif file and `config.py` for different dataset.
+
+
+
+## Acknowledgements
+
+Thanks to the authors of the Paper: [A mixed-scale dense convolutional neural network for image analysis](http://www.pnas.org/content/early/2017/12/21/1715832114) (Pelt, D. M. *et. al.*)
