@@ -16,8 +16,6 @@ class ProjectConfig:
 		self.WEIGHTS = None
 		self.CACHE = None
 		self.DATASET = None
-		self.vgg_url = None
-		self.vgg_path = None
 		self.model_final = None
 		self.MAIN_FOLDER = None
 		self.DATA_FOLDER = None
@@ -55,8 +53,6 @@ class ProjectConfig:
 		self.CACHE = data['cache']
 		self.DATASET = data['data']['dataset']
 
-		self.vgg_url = data['vgg_url']
-		self.vgg_path = data['vgg_path']
 		self.model_final = data['model_final_path']
 
 		self.MODEL_PATH = data['model_checkpoint']
