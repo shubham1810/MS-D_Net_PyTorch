@@ -1,0 +1,26 @@
+data_folder: "<PATH TO FOLDER CONTAINING DATASETS>"
+cache: True
+
+data:
+  dataset: '<DATASET NAME>'
+  dataset_path: '<DATASET PATH>'
+  input_folder: '<NAME OF FOLDER WITH RGB IMAGES>'
+  label_folder: '<NAME OF FOLDER WITH SEGMENTED IMAGES>'
+  data_format: '<DATA FORMAT. DEFAULT IS TIF>'
+
+# Model checkpoint to be saved
+model_checkpoint: 'checkpoints/model_v4_{}'
+
+vgg_url: 'https://download.pytorch.org/models/vgg16_bn-6c64b313.pth'
+vgg_path: './vgg16_bn-6c64b313.pth'
+model_final_path: './model_epoch_0'
+
+labels: ['class_00', 'class_01']
+class_weights: [1, 2.5]
+
+# Some parameters for model
+model:
+  window_size: 512
+  stride: 32
+  in_channels: 3
+  batch_size: 5

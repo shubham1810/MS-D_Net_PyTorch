@@ -18,7 +18,7 @@ class ProjectConfig:
 		self.DATASET = None
 		self.vgg_url = None
 		self.vgg_path = None
-		self.segnet_final = None
+		self.model_final = None
 		self.MAIN_FOLDER = None
 		self.DATA_FOLDER = None
 		self.LABEL_FOLDER = None
@@ -57,7 +57,7 @@ class ProjectConfig:
 
 		self.vgg_url = data['vgg_url']
 		self.vgg_path = data['vgg_path']
-		self.segnet_final = data['segnet_final_path']
+		self.model_final = data['model_final_path']
 
 		self.MODEL_PATH = data['model_checkpoint']
 
