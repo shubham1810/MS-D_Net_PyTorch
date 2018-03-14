@@ -26,7 +26,7 @@ class MSDNet(nn.Module):
 		if isinstance(m, nn.Linear):
 			torch.nn.init.kaiming_normal(m, m.weight.data)
 
-	def __init__(self, num_layers=50, in_channels=None, out_channels=None):
+	def __init__(self, num_layers=40, in_channels=None, out_channels=None):
 		if in_channels is None:
 			in_channels=cfg.IN_CHANNELS
 

@@ -5,15 +5,16 @@ The files are organized as follows:
 ```
 .
 ├── config.py (contains the configuration class which handles reading config for experiments)
+├── data
+│   └── README.md
 ├── data_handler.py (data handler class for making and modifying datasets)
 ├── experiment
 │   └── cfg.yml (template and default config file [DO NOT REMOVE])
 ├── main.py (main file that runs the model)
 ├── model.py (model architecture specifications)
 ├── README.md
-├── scripts
-│   └── create_experiment.sh (script to create a new experiment)
 └── utils.py (utility functions used throughout the code)
+
 ```
 
 # Creating an Experiment
@@ -31,12 +32,16 @@ To create a new experiment, create the following directory structure.
 
 ## To run an experiment
 
-The `main.py` script is used to run the experiment.
-The command to run an experiment in vizualization mode is as follows:
-Assuming, don't save output, use pretrained model, don't import VGG weights.
+The `main.py` script is used to run the experiment. To train the model, without using a pretrained checkpoint, to write the images in experiment directory, run the following command:
 
 ```
-python main.py --exp_dir=<EXP_DIR> --cfg=<CONFIG_PATH> --pretrained --write_images=True --train
+python main.py --exp_dir=<EXP_DIR> --cfg=<CONFIG_PATH> --nopretrained --write_images --train
+```
+
+To just run the model you have trained, update the config file with the path to the latest checkpoint and run the following command:
+
+```
+python main.py --exp_dir=<EXP_DIR> --cfg=<CONFIG_PATH> --pretrained --write_images --train
 ```
 
 # Dataset
