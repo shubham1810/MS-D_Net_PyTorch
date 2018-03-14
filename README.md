@@ -46,7 +46,7 @@ python main.py --exp_dir=<EXP_DIR> --cfg=<CONFIG_PATH> --nopretrained --write_im
 To just run the model you have trained, update the config file with the path to the latest checkpoint and run the following command:
 
 ```
-python main.py --exp_dir=<EXP_DIR> --cfg=<CONFIG_PATH> --pretrained --write_images --train
+python main.py --exp_dir=<EXP_DIR> --cfg=<CONFIG_PATH> --pretrained --write_images --notrain --viz
 ```
 
 # Dataset
